@@ -9,7 +9,7 @@ This installs the required modules, including the RetrievalToolbox library itsel
     julia> using Pkg
     julia> Pkg.add(url="https://github.com/US-GHG-Center/RetrievalToolbox.jl#thermal")
 
-Install XRTM according to the [RetrievalToolbox installation guide](https://github.com/US-GHG-Center/RetrievalToolbox.jl). The needed functionality for thermal wavelength ranges, i.e. the handling of isotropically emitted radiance from both the surface as well as the atmosphere itself, is handled only via XRTM (for the time being). Integrated Beer-Lambert solver for absorption-only atmospheres *does not yet support thermal emission*.
+Install XRTM according to the [RetrievalToolbox installation guide](https://github.com/US-GHG-Center/RetrievalToolbox.jl). The needed functionality for thermal wavelength ranges, i.e. the handling of isotropically emitted radiance from both the surface as well as the atmosphere itself, is handled only via XRTM (for the time being). The integrated Beer-Lambert solver for absorption-only atmospheres *does not yet support thermal emission*.
 
 Then to launch a Jupyter notebook
 
