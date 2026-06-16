@@ -4,11 +4,6 @@ From within the cloned directory:
 
     julia --project=. -e 'using Pkg; Pkg.instantiate()'
 
-This installs the required modules, including the RetrievalToolbox library itself. Note that this repository shows an example related to the thermal spectral range, which as of April 2026 is not yet integrated into the main branch. Thus, if users want to instantiate a project environment manually, they need to access the `#thermal` branch of RetrievalToolbox when adding the module:
-
-    julia> using Pkg
-    julia> Pkg.add(url="https://github.com/US-GHG-Center/RetrievalToolbox.jl#thermal")
-
 Install XRTM according to the [RetrievalToolbox installation guide](https://github.com/US-GHG-Center/RetrievalToolbox.jl). The needed functionality for thermal wavelength ranges, i.e. the handling of isotropically emitted radiance from both the surface as well as the atmosphere itself, is handled only via XRTM (for the time being). The integrated Beer-Lambert solver for absorption-only atmospheres *does not yet support thermal emission*.
 
 Then to launch a Jupyter notebook
